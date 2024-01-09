@@ -9,7 +9,6 @@ RUN go get
 # ビルドのみに留め、CMDによるアプリケーションの起動は削除します
 RUN go build -o server
 
-
 # 2回目のFROM命令で、ビルドしたバイナリを実行するイメージを指定する
 FROM alpine
 
