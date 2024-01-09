@@ -15,4 +15,4 @@ spec:
   template:
     spec:
       containers:
-        - image: ghcr.io/2023-4400-exp/学生番号-go-server-ci:ef4e56bfeb910e64f56fff790019e02c4215ab1f
+        - image: ghcr.io/2023-4400-exp/学生番号-go-server-ci:8311df2b5139a190dfc70bd287f22391d66b7aa6
