@@ -6,13 +6,13 @@ metadata:
   name: go-server-ci
 spec:
   ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
   selector:
     app: go-server-ci
   type: NodePort
   template:
     spec:
       containers:
-        - image: ghcr.io/2023-4400-exp/学生番号-go-server-ci:cdfebdfe61f94e9233b694d42eae30b9053b0185
+        - image: ghcr.io/2023-4400-exp/学生番号-go-server-ci:ef4e56bfeb910e64f56fff790019e02c4215ab1f
