@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: go-server-ci
+  name: go-server-ci
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-server-ci
+  template:
+    metadata:
+      labels:
+        app: go-server-ci
+    spec:
+      containers:
+      - image: ghcr.io/2023-4400-exp/4423-go-server-ci:37f986cc4c2a5bda02b503df95dda31080ea4349@sha256:3d9c716e93b83a88c9bc481a2e0a7058c13a27d4d0a3d8a98e9ab1a179a538d3
+        name: go-server-ci
