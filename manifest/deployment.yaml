@@ -11,12 +11,8 @@ spec:
     targetPort: 8080
   selector:
     app: go-server-ci
-<<<<<<< HEAD
-  type: NodePort
-=======
   type: NodePort
   template:
     spec:
       containers:
         - image: ghcr.io/2023-4400-exp/学生番号-go-server-ci:cdfebdfe61f94e9233b694d42eae30b9053b0185
->>>>>>> c67ce5077e7899f69222e8931938a7ad24985b59
